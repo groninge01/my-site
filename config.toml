@@ -1,5 +1,5 @@
 siteTitle = "Stefan van Groningen"
-url = "http://example.com"
+url = "http://www.stefanvangroningen.com"
 linkPrefix = "/notUsedYet"
 email = "name@example.com"
 twitter = "@handle"
@@ -69,7 +69,7 @@ dir = "writing"
 title = "About"
 text = '''
 <div class="left@md mb-3 flex@sm items-center">
-  <img src="/avatar.jpg" srcset="/avatar@2x.jpg 2x" width="150" height="150" alt="Profile picture of you" class="avatar block flexItem-25 w-25 mx-auto mb-3 mr-3@sm ml-0@sm mb-0@sm circle border borderColor-light" />
+  <img src="/1avatar.jpg" srcset="/1avatar@2x.jpg 2x" width="150" height="150" alt="Profile picture of you" class="avatar block flexItem-25 w-25 mx-auto mb-3 mr-3@sm ml-0@sm mb-0@sm circle border borderColor-light" />
   <p class="flexItem-auto">About you...</p>
 </div>
 <div class="left@sm w-50@sm pr-2@sm mb-3 mb-0@sm">
