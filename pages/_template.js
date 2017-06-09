@@ -67,6 +67,33 @@ class Template extends Component {
     c) Nearly all of my audience is likely to be in the US and it's acceptable
        if the effect is off by ±2 hrs.
     */
+
+    fetch('//freegeoip.net/json/')
+      .then((response)=>{
+          return response.json();
+      }).then((data)=>{
+          let lat = data.latitude;
+          let long = data.longitude;
+          const time = moment()
+          const sunset = suncalc.getTimes(time, 40.027435, -105.251945).sunset
+          const sunrise = suncalc.getTimes(time, 40.027435, -105.251945).sunrise
+
+          if ( time.isAfter(sunset) || time.isBefore(sunrise) ) {
+            this.toggleReverse()
+          }
+        }
+
+        toggleReverse = () => {
+          this.setState({
+            isReverse: !this.state.isReverse
+          })
+        }
+      }).catch((error)=>{
+        console.log(error)
+      })
+
+
+
     const time = moment()
     const sunset = suncalc.getTimes(time, 40.027435, -105.251945).sunset
     const sunrise = suncalc.getTimes(time, 40.027435, -105.251945).sunrise
