@@ -21,11 +21,11 @@ class SectionBlock extends Component {
 
     return (
       <section className={'cf mb-4 relative sectionBlock--' + camelCase(title)}>
-        <header className="left@md w-25@md mx-2 mx-3@sm mx-0@md pr-3@md mb-3 mb-0@md pb-3 pb-0@md border-bottom border-none@md borderColor-light">
+        <header className="left@md w-33@md mx-2 mx-3@sm mx-0@md pr-3@md mb-3 mb-0@md pb-3 pb-0@md border-bottom border-none@md borderColor-light">
           <h2 className={'h4 caps' + (blurb ? ' mb-2 ' : ' mb-0 ')}>{title}</h2>
           {blurbTxt}
         </header>
-        <div className="right@md w-75@md px-2 px-3@sm pr-0@md">
+        <div className="right@md w-66@md px-2 px-3@sm pr-0@md">
           {children}
         </div>
       </section>
