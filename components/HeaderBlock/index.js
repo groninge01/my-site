@@ -1,8 +1,6 @@
 import camelCase from 'lodash/camelCase'
 import React, { Component, PropTypes } from 'react'
 
-import RhymesWith from 'components/RhymesWith'
-
 import './styles.css'
 
 
@@ -31,7 +29,6 @@ class HeaderBlock extends Component {
       <header className={'cf mb-4 relative sectionBlock--' + camelCase(title)} role="banner">
         <div className="left@md w-33@md px-2 px-3@sm pl-1@md pr-3@md">
           <h1 className="h1 caps lineHeight-3 mb-1">{formattedTitle}</h1>
-          <RhymesWith />
         </div>
         <div className="right@md w-66@md mt-3 mt-0@md px-2 px-3@sm pr-0@md">
           {children}
