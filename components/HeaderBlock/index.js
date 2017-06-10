@@ -29,6 +29,7 @@ class HeaderBlock extends Component {
       <header className={'cf mb-4 relative sectionBlock--' + camelCase(title)} role="banner">
         <div className="left@md w-33@md px-2 px-3@sm pl-1@md pr-3@md">
           <h1 className="h1 caps lineHeight-3 mb-1">{formattedTitle}</h1>
+          <p className="fs-5 italic">[ &#712;stefɑn vɑn &#712;&#611;ron&#618;&#331;εn ]</p>
         </div>
         <div className="right@md w-66@md mt-3 mt-0@md px-2 px-3@sm pr-0@md">
           {children}
