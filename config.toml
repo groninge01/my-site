@@ -1,9 +1,9 @@
 siteTitle = "Stefan van Groningen"
 url = "http://www.stefanvangroningen.com"
 linkPrefix = "/notUsedYet"
-email = "name@example.com"
-twitter = "@handle"
-github = "username"
+email = "groninge@hotmail.com"
+linkedin = "stefanvangroningen"
+github = "groninge01"
 
 [js]
 head = """
@@ -16,7 +16,7 @@ if ('classList' in document.createElement('div') && 'querySelector' in document 
 """
 analytics = """
 window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-xxxxxxxx-x', 'auto');
+ga('create', 'UA-88166052-1', 'auto');
 ga('send', 'pageview');
 """
 font = """
@@ -52,7 +52,8 @@ favicons = '''
 
 [header]
 text = '''
-<p>Header text</p>
+<p><b>Hi there!</b> I am teaching myself to code, from front-end to back-en and everything in between.</p>
+<p>Help me help you to create a fast, secure and beautiful web experience for everyone!</p>
 '''
 
 [work]
@@ -70,25 +71,27 @@ title = "About"
 text = '''
 <div class="left@md mb-3 flex@sm items-center">
   <img src="/1avatar.jpg" srcset="/1avatar@2x.jpg 2x" width="150" height="150" alt="Profile picture of you" class="avatar block flexItem-25 w-25 mx-auto mb-3 mr-3@sm ml-0@sm mb-0@sm circle border borderColor-light" />
-  <p class="flexItem-auto">About you...</p>
+  <p class="flexItem-auto">I am following <a href="https://github.com/P1xt/p1xt-guides/blob/master/wd-cs.md" target="_blank">this guide</a> which is created by <a href="https://github.com/P1xt/p1xt-guides" target="_blank">P1xt</a>. I am currently on <i>Tier 1 - get started</i> reading the book <a href="https://github.com/getify/You-Dont-Know-JS/blob/master/types%20&%20grammar/README.md#you-dont-know-js-types--grammar" target="_blank">"You Don't Know JS: Types & Grammar"</a>. When taking a break from coding I am probably a) having fun with my family or b) getting stronger by doing calisthenics or c) just enjoying a craft beer while watching Twin Peaks.</p>
 </div>
 <div class="left@sm w-50@sm pr-2@sm mb-3 mb-0@sm">
-  <h3 class="h4 mb-0">A list of things</h3>
+  <h3 class="h4 mb-0">I Am Good With</h3>
   <ul style="margin-top:1.5rem">
-    <li>One thing</li>
-    <li>Two thing</li>
-    <li>Red thing</li>
-    <li>Blue thing</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>WordPress</li>
+    <li>Linux</li>
+    <li>nginx</li>
   </ul>
 </div>
 <div class="left@sm w-50@sm pl-2@sm">
-  <h3 class="h4 mb-0">Open, accessible, fast, responsive</h3>
+  <h3 class="h4 mb-0">I Am Getting Better With</h3>
   <ul style="margin-top:1.5rem">
-    <li>Please</li>
-    <li>Build</li>
-    <li>With</li>
-    <li>Progressive</li>
-    <li>Enhancement</li>
+    <li>React</li>
+    <li>JavaScript</li>
+    <li>Math</li>
+    <li>Git(Hub)</li>
+    <li>npm/yarn</li>
   </ul>
 </div>
 '''
