@@ -41,10 +41,10 @@ class Footer extends Component {
               <a href={'mailto:' + config.email}>Email</a>
             </li>
             <li className="inlineBlock mr-3">
-              <a href={'https://twitter.com/' + config.twitter}>Twitter</a>
+              <a href={'https://linkedin.com/in/' + config.linkedin} target="_blank">Linkedin</a>
             </li>
             <li className="inlineBlock">
-              <a href={'https://github.com/' + config.github}>GitHub</a>
+              <a href={'https://github.com/' + config.github} target="_blank">GitHub</a>
             </li>
           </ul>
         </div>
