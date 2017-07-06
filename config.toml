@@ -52,8 +52,8 @@ favicons = '''
 
 [header]
 text = '''
-<p><b>Hi there!</b> I am teaching myself to code, from front-end to back-en and everything in between.</p>
-<p>Help me help you to create a fast, secure and beautiful web experience for everyone!</p>
+<p><b>Hi there!</b> Based in the city of Alkmaar, the Netherlands I am teaching myself to code: from front-end to back-end and everything in between.</p>
+<p>I would love to help you to create a fast, secure and beautiful web experience for everyone!</p>
 '''
 
 [work]
@@ -71,7 +71,7 @@ title = "About"
 text = '''
 <div class="left@md mb-3 flex@sm items-center">
   <img src="/1avatar.jpg" srcset="/1avatar@2x.jpg 2x" width="150" height="150" alt="Profile picture of you" class="avatar block flexItem-25 w-25 mx-auto mb-3 mr-3@sm ml-0@sm mb-0@sm circle border borderColor-light" />
-  <p class="flexItem-auto">I am following <a href="https://github.com/P1xt/p1xt-guides/blob/master/wd-cs.md" target="_blank">this guide</a> which is created by <a href="https://github.com/P1xt/p1xt-guides" target="_blank">P1xt</a>. I am currently on <i>Tier 1 - get started</i> reading the book <a href="https://github.com/getify/You-Dont-Know-JS/blob/master/types%20&%20grammar/README.md#you-dont-know-js-types--grammar" target="_blank">"You Don't Know JS: Types & Grammar"</a>. When taking a break from coding I am probably a) having fun with my family or b) getting stronger by doing calisthenics or c) just enjoying a craft beer while watching Twin Peaks.</p>
+  <p class="flexItem-auto">I am following <a href="https://github.com/P1xt/p1xt-guides/blob/master/wd-cs.md" target="_blank">this guide</a> which is created by <a href="https://github.com/P1xt/p1xt-guides" target="_blank">P1xt</a>. I am currently on <i>Tier 1 - get started</i> reading the book <a href="https://github.com/getify/You-Dont-Know-JS/tree/master/async%20%26%20performance" target="_blank">"You Don't Know JS: Async & Performance"</a>. When taking a break from coding I am probably a) doing fun things with my family or b) getting stronger through calisthenics or c) just enjoying a craft beer while watching Twin Peaks.</p>
 </div>
 <div class="left@sm w-50@sm pr-2@sm mb-3 mb-0@sm">
   <h3 class="h4 mb-0">I Am Good With</h3>
@@ -91,7 +91,7 @@ text = '''
     <li>JavaScript</li>
     <li>Math</li>
     <li>Git(Hub)</li>
-    <li>npm/yarn</li>
+    <li>Python</li>
   </ul>
 </div>
 '''
