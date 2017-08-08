@@ -58,7 +58,7 @@ text = '''
 
 [work]
 title = "Work"
-blurb = "Work blurb"
+blurb = "All the projects I am creating from the FreeCodeCamp front end development map."
 dir = "work"
 
 [writing]
@@ -71,27 +71,10 @@ title = "About"
 text = '''
 <div class="left@md mb-3 flex@sm items-center">
   <img src="/1avatar.jpg" srcset="/1avatar@2x.jpg 2x" width="150" height="150" alt="Profile picture of you" class="avatar block flexItem-25 w-25 mx-auto mb-3 mr-3@sm ml-0@sm mb-0@sm circle border borderColor-light" />
-  <p class="flexItem-auto">I am following <a href="https://github.com/P1xt/p1xt-guides/blob/master/wd-cs.md" target="_blank">this guide</a> which is created by <a href="https://github.com/P1xt/p1xt-guides" target="_blank">P1xt</a>. I am currently on <i>Tier 1 - get started</i> reading the book <a href="https://github.com/getify/You-Dont-Know-JS/tree/master/async%20%26%20performance" target="_blank">"You Don't Know JS: Async & Performance"</a>. When taking a break from coding I am probably a) doing fun things with my family or b) getting stronger through calisthenics or c) just enjoying a craft beer while watching Twin Peaks.</p>
-</div>
-<div class="left@sm w-50@sm pr-2@sm mb-3 mb-0@sm">
-  <h3 class="h4 mb-0">I Am Good With</h3>
-  <ul style="margin-top:1.5rem">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>WordPress</li>
-    <li>Linux</li>
-    <li>nginx</li>
-  </ul>
-</div>
-<div class="left@sm w-50@sm pl-2@sm">
-  <h3 class="h4 mb-0">I Am Getting Better With</h3>
-  <ul style="margin-top:1.5rem">
-    <li>React</li>
-    <li>JavaScript</li>
-    <li>Math</li>
-    <li>Git(Hub)</li>
-    <li>Python</li>
-  </ul>
+  <div class="flexItem-auto">
+    <p>I am teaching myself how to code by following <a href="https://github.com/P1xt/p1xt-guides/blob/master/wd-cs.md" target="_blank">this guide</a>, which is created by <a href="https://github.com/P1xt/p1xt-guides" target="_blank">P1xt</a>. I am currently on <i>Tier 1 - get started</i> reading the book <a href="https://github.com/getify/You-Dont-Know-JS/tree/master/async%20%26%20performance" target="_blank">"You Don't Know JS: Async & Performance"</a>. </p>
+    <p>I am building my projects with HTML, CSS and vanilla JavaScript. All writing is done in Atom and I am using Gulp and Browsersync to help my build process.</p>
+    <p>When taking a break from coding I am probably a) doing fun things with my family or b) working out or c) kicking back while enjoying a craft beer.</p>
+  </div>
 </div>
 '''
