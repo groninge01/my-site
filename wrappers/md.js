@@ -54,7 +54,7 @@ class MDWrapper extends Component {
       workHeader = (
         <div className="cf mt-2 mt-3@sm">
           <div className="markdown right@sm w-25@sm">
-            <h2 className="h5 mb-1">Responsibilities</h2>
+            <h2 className="h5 mb-1">Responsibilities:</h2>
             <ul className="fs-5">
               { Responsibilities }
             </ul>
@@ -66,8 +66,8 @@ class MDWrapper extends Component {
       )
     } else if ( responsibilities ) {
       workHeader = (
-        <div className="markdown cf">
-          <h2 className="h5 left@sm mr-1@sm">Responsibilities</h2>
+        <div className="markdown">
+          <h2 className="h5 left@sm mr-1@sm">Responsibilities:</h2>
           <p className="fs-5 overflow-hidden">
             { responsibilities }
           </p>

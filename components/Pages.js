@@ -32,17 +32,9 @@ class Pages extends Component {
            (!draft) &&
            (!limit || i < limit) &&
            (!folder || folder === access(page, 'file.dirname').split('/')[0]) ) {
-        switch ( folder ) {
-          // TODO: Figure out why this case is throwing the "two children have the same key" warning
-          case config.work.dir:
-            pageLinks.push(
-              <WorkTeaser key={page.path} page={page} />
-            )
-          default:
-            pageLinks.push(
-              <Teaser key={page.path} page={page} row={row} />
-            )
-        }
+             pageLinks.push(
+               <Teaser key={page.path} page={page} row={row} />
+             )
         i++
       }
     })
