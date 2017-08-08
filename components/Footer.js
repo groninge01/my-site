@@ -10,7 +10,7 @@ class Footer extends Component {
     let homeLink
     if ( this.props.location.pathname !== '/' ) {
       homeLink = (
-        <li className="inlineBlock mr-3">
+        <li className="inlineBlock mr-2">
           <Link to={prefixLink('/')}>Home</Link>
         </li>
       )
@@ -22,25 +22,25 @@ class Footer extends Component {
           <nav id="nav" className="mr-auto@sm" role="navigation">
             <ul className="listReset lineHeight-44 mb-0 flex@sm flex-wrap items-center">
               { homeLink }
-              <li className="inlineBlock mr-3">
+              <li className="inlineBlock mr-2">
                 <Link to={prefixLink('/work/')}>Work</Link>
               </li>
-              <li className="inlineBlock mr-3">
+              <li className="inlineBlock mr-2">
                 <Link to={prefixLink('/writing/')}>Writing</Link>
               </li>
-              <li className="inlineBlock mr-3">
+              <li className="inlineBlock mr-2">
                 <Link to={prefixLink('/resume/')}>Résumé</Link>
               </li>
-              <li className="inlineBlock mr-3">
+              <li className="inlineBlock">
                 <Link to={prefixLink('/colophon/')}>Colophon</Link>
               </li>
             </ul>
           </nav>
           <ul className="listReset lineHeight-44 mb-0 flex@sm flex-wrap items-center">
-            <li className="inlineBlock mr-3">
+            <li className="inlineBlock mr-2">
               <a href={'mailto:' + config.email}>Email</a>
             </li>
-            <li className="inlineBlock mr-3">
+            <li className="inlineBlock mr-2">
               <a href={'https://linkedin.com/in/' + config.linkedin} target="_blank">Linkedin</a>
             </li>
             <li className="inlineBlock">
