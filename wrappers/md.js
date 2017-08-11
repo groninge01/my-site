@@ -16,6 +16,7 @@ class MDWrapper extends Component {
     const { route } = this.props
     const page = route.page
     const date = access(page, 'data.date')
+    const path = access(page, 'data.path')
     const dirName = access(page, 'file.dirname').split('/')[0]
     const title = access(page, 'data.title') || page.path
     const introTxt = access(page, 'data.intro') || ''
@@ -30,6 +31,7 @@ class MDWrapper extends Component {
     let Responsibilities = []
     let Figure = []
     let workHeader = []
+    let htmlFooter
 
     if ( introTxt ) {
       intro = (<p className="fs-3 mt-2" dangerouslySetInnerHTML={{ __html: introTxt }} />)
@@ -81,6 +83,15 @@ class MDWrapper extends Component {
       )
     }
 
+    if ( path !== '/resume/') {
+      htmlFooter = (
+      <footer>
+        { prompt }
+        <ReadNext post={page} pages={route.pages} />
+      </footer>
+      )
+    }
+
     return (
       <main className="maxW-3 mx-auto mb-2 mb-4@sm" role="main">
         <Helmet title={title} />
@@ -92,10 +103,7 @@ class MDWrapper extends Component {
           { intro }
           { workHeader }
           <div dangerouslySetInnerHTML={{ __html: page.data.body }} className="markdown mt-3" />
-          <footer>
-            { prompt }
-            <ReadNext post={page} pages={route.pages} />
-          </footer>
+          { htmlFooter }
         </article>
       </main>
     )
