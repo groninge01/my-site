@@ -1,0 +1,51 @@
+Resume of Stefan van Groningen
+
+Contact
+
+email: groninge@hotmail.com
+website: https://www.stefanvangroningen.com
+
+
+Experience
+
+Designed and built the following projects:
+
+- Portfolio (part of the FreeCodeCamp curriculum)
+- Style Conference website (part of the course Learn to Code HTML & CSS)
+- Show the Local Weather (part of the FreeCodeCamp curriculum)
+- Wikipedia Viewer (part of the FreeCodeCamp curriculum)
+
+
+Skills
+
+- HTML
+- JavaScript
+- CSS
+
+
+Education
+
+Web Development with Computer Science Foundations:
+
+Tier 1 - get started
+
+1. Book: You Don't Know JS: Up & Going
+2. Book: You Don't Know JS: Scope & Closures
+3. Book: You Don't Know JS: this & Object Prototypes
+4. Course: Learn to Code HTML & CSS
+5. Project: Portfolio from the frontend section of FCC
+6. Course: Introduction to Computer Science - CS50
+7. Book: You Don't Know JS: Types & Grammar
+8. Book: You Don't Know JS: Async & Performance
+9. Book: You Don't Know JS: ES6 & Beyond***
+10. Course: Learn to Code Advanced HTML & CSS
+11. Project: Clone this online resume template
+12. Article: Read Project Specification Documents and get in the habit of including every bit of information it details that makes sense for a project in the README.md or other supporting documentation for your projects
+13. Course: Effective Thinking Through Mathematics
+14. Book: Setting Up ES6
+15. Book: JavaScript Allongé, the "Six" Edition
+16. Course: Getting Sassy with CSS
+17. Project: Build an online Towers of Hanoi solver that accepts a tower height between 5 and 10, and then displays a graphical (animated) solution, iteratively moving each piece until the puzzle is solved
+18. Project: Pick a template from here and create a new template with it as your inspiration (do not use it's assets)
+
+*** Currently on this book/course/project
