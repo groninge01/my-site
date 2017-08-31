@@ -37,8 +37,8 @@ Tier 1 - get started
 6. Course: Introduction to Computer Science - CS50
 7. Book: You Don't Know JS: Types & Grammar
 8. Book: You Don't Know JS: Async & Performance
-9. Book: You Don't Know JS: ES6 & Beyond***
-10. Course: Learn to Code Advanced HTML & CSS
+9. Book: You Don't Know JS: ES6 & Beyond
+10. Course: Learn to Code Advanced HTML & CSS***
 11. Project: Clone this online resume template
 12. Article: Read Project Specification Documents and get in the habit of including every bit of information it details that makes sense for a project in the README.md or other supporting documentation for your projects
 13. Course: Effective Thinking Through Mathematics
