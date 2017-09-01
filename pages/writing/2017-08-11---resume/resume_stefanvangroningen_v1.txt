@@ -12,6 +12,7 @@ Designed and built the following projects:
 
 - Portfolio (part of the FreeCodeCamp curriculum)
 - Style Conference website (part of the course Learn to Code HTML & CSS)
+- Build a Random Quote Machine (part of the FreeCodeCamp curriculum)
 - Show the Local Weather (part of the FreeCodeCamp curriculum)
 - Wikipedia Viewer (part of the FreeCodeCamp curriculum)
 

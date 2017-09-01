@@ -18,6 +18,7 @@ Designed and built the following projects:
 
 * [Portfolio](https://www.stefanvangroningen.com/work) (part of the FreeCodeCamp curriculum)
 * [Style Conference website](https://groninge01.github.io/styles-conference/) (part of the course Learn to Code HTML & CSS)
+* [Build a Random Quote Machine](http://simple-picture.surge.sh) (part of the FreeCodeCamp curriculum)
 * [Show the Local Weather](http://ill-fated-circle.surge.sh) (part of the FreeCodeCamp curriculum)
 * [Wikipedia Viewer](http://low-hate.surge.sh) (part of the FreeCodeCamp curriculum)
 
