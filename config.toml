@@ -53,12 +53,12 @@ favicons = '''
 [header]
 text = '''
 <p><b>Hi there!</b> Based in the city of Alkmaar, the Netherlands I am teaching myself to code: from front-end to back-end and everything in between.</p>
-<p>I would love to help you to create a fast, secure and beautiful web experience for everyone!</p>
+<p>I would love to help you create a fast, secure and beautiful web experience for everyone!</p>
 '''
 
 [work]
 title = "Work"
-blurb = "All the projects I am creating from the FreeCodeCamp front end development map."
+blurb = "All the projects I am building from the FreeCodeCamp Front End Development map."
 dir = "work"
 
 [writing]
