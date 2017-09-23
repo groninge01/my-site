@@ -3,7 +3,7 @@ node_js:
   - 'stable'
 
 script:
-  - yarn add
+  - yarn install
   - yarn run build 
 
 deploy:
