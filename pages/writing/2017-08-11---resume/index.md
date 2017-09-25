@@ -47,8 +47,8 @@ Designed and built the following projects:
 1. Book: You Don't Know JS: ES6 & Beyond
 1. Course: Learn to Code Advanced HTML & CSS
 1. Project: Clone this online resume template
-1. **Article: Read Project Specification Documents and get in the habit of including every bit of information it details that makes sense for a project in the README.md or other supporting documentation for your projects***
-1. Course: Effective Thinking Through Mathematics
+1. Article: Read Project Specification Documents and get in the habit of including every bit of information it details that makes sense for a project in the README.md or other supporting documentation for your projects
+1. **Course: Effective Thinking Through Mathematics***
 1. Book: Setting Up ES6
 1. Book: JavaScript Allongé, the "Six" Edition
 1. Course: Getting Sassy with CSS
