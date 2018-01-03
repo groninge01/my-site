@@ -72,8 +72,8 @@ text = '''
 <div class="left@md mb-3 flex@sm items-center">
   <img src="/1avatar.jpg" srcset="/1avatar@2x.jpg 2x" width="150" height="150" alt="Profile picture of you" class="avatar block flexItem-25 w-25 mx-auto mb-3 mr-3@sm ml-0@sm mb-0@sm circle border borderColor-light" />
   <div class="flexItem-auto">
-    <p>I am teaching myself how to code by following <a href="https://github.com/P1xt/p1xt-guides/blob/master/wd-cs.md" target="_blank">this guide</a>, which is created by <a href="https://github.com/P1xt/p1xt-guides" target="_blank">P1xt</a>. I am currently on <i>Tier 1 - get started</i> reading <a href="https://leanpub.com/javascriptallongesix/read" target="_blank">"JavaScript Allongé, the 'Six' Edition"</a>.</p>
-    <p>I am building my projects with HTML, CSS and JavaScript (vanilla or Angular). All writing is done in Visual Studio Code and I am using gulp and browsersync to help my build process.</p>
+    <p>I am teaching myself how to code by following <a href="https://github.com/P1xt/p1xt-guides/blob/master/wd-cs.md" target="_blank">this guide</a>, which is created by <a href="https://github.com/P1xt/p1xt-guides" target="_blank">P1xt</a>. I am currently on <i>Tier 1 - get started</i> following the course <a href="http://www.sassshop.com/#/" target="_blank">"Getting Sassy with CSS</a>.</p>
+    <p>I am building my projects with HTML, CSS and JavaScript (vanilla or Angular). All writing is done in Visual Studio Code and I am using gulp and browser-sync to help my build process.</p>
     <p>When taking a break from coding I am probably a) doing fun things with my family or b) working out or c) kicking back while enjoying a craft beer.</p>
   </div>
 </div>
