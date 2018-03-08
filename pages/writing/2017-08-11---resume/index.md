@@ -51,8 +51,8 @@ Designed and built the following projects:
 1. Course: Effective Thinking Through Mathematics
 1. Book: Setting Up ES6
 1. Book: JavaScript Allongé, the "Six" Edition
-1. **Course: Getting Sassy with CSS***
-1. Project: Build an online Towers of Hanoi solver that accepts a tower height between 5 and 10, and then displays a graphical (animated) solution, iteratively moving each piece until the puzzle is solved
+1. Course: Getting Sassy with CSS
+1. **Project: Build an online Towers of Hanoi solver that accepts a tower height between 5 and 10, and then displays a graphical (animated) solution, iteratively moving each piece until the puzzle is solved***
 1. Project: Pick a template from here and create a new template with it as your inspiration (do not use it's assets)
 
 ***Currently on this book/course/project**
