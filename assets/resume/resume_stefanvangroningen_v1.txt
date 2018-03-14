@@ -15,6 +15,7 @@ Designed and built the following projects:
 - Build a Random Quote Machine (part of the FreeCodeCamp curriculum)
 - Show the Local Weather (part of the FreeCodeCamp curriculum)
 - Wikipedia Viewer (part of the FreeCodeCamp curriculum)
+- Towers of Hanoi (part of the p1xt guide Web Development w/ Computer Science)
 
 
 Skills

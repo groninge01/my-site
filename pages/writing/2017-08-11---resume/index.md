@@ -21,6 +21,7 @@ Designed and built the following projects:
 * [Build a Random Quote Machine](http://simple-picture.surge.sh) (part of the FreeCodeCamp curriculum)
 * [Show the Local Weather](http://ill-fated-circle.surge.sh) (part of the FreeCodeCamp curriculum)
 * [Wikipedia Viewer](http://low-hate.surge.sh) (part of the FreeCodeCamp curriculum)
+* [Towers of Hanoi](http://towers-of-hanoi.azurewebsites.net) (part of the p1xt guide Web Development w/ Computer Science)
 
 
 ## Skills:
@@ -28,6 +29,7 @@ Designed and built the following projects:
 * HTML
 * JavaScript
 * CSS
+* a bit of Angular
 
 
 ## Education:
