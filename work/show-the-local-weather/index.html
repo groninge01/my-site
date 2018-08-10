@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Stefan van Groningen</title><link rel="stylesheet" href="/styles.css"/><script src="//npmcdn.com/fontfaceobserver@1.7.1/fontfaceobserver.js"></script><script>var font = new FontFaceObserver('leagueSpartan-bold');
+font.load().then(function () {
+  document.documentElement.className += ' webfonts-loaded';
+});
+</script></head><body><script>if ('classList' in document.createElement('div') && 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach) {
+  document.documentElement.classList += 'js';
+  var script = document.createElement('script');
+  script.src = '/bundle.js';
+  document.getElementsByTagName('body')[0].appendChild(script);
+}
+</script><div id="react-mount"><div class="wrap pt-2" data-reactroot="" data-reactid="1" data-react-checksum="-1783312798"><!-- react-empty: 2 --><header class="header flexItem-none mb-4" role="banner" data-reactid="3"><nav class="fs-5 maxW-4 mx-auto px-2 px-4@sm" role="navigation" data-reactid="4"><h1 class="inline fontSize-inherit" data-reactid="5"><a href="/" data-reactid="6">Stefan van Groningen</a></h1><span class="mx-1" data-reactid="7">/</span><a href="/work/" data-reactid="8">Work</a><span class="mx-1" data-reactid="9">/</span><span data-reactid="10">Show the Local Weather</span></nav></header><a href="#nav" class="skipLink hide p-1 bgDarker-1" data-reactid="11">Skip to navigation</a><div class="content maxW-4 mx-auto px-2 px-4@sm pb-4" data-reactid="12"><main class="maxW-3 mx-auto mb-2 mb-4@sm" role="main" data-reactid="13"><!-- react-empty: 14 --><article role="article" data-reactid="15"><header data-reactid="16"><h1 class="h1 mb-0" data-reactid="17">Show the Local Weather</h1><!-- react-text: 18 --><!-- /react-text --></header><p class="fs-3 mt-2" data-reactid="19">FreeCodeCamp - Intermediate Front End Development Projects</p><div class="markdown" data-reactid="20"><h2 class="h5 left@sm mr-1@sm" data-reactid="21">Responsibilities:</h2><p class="fs-5 overflow-hidden" data-reactid="22">Front-end development; HTML; CSS; JavaScript; Promises</p></div><div class="markdown mt-3" data-reactid="23"><h2>Callback hell</h2>
+<p>About the same time last year I got stuck in what I now know was “callback hell”. At that time I was working on the <a href="https://www.freecodecamp.org/challenges/show-the-local-weather">“Show the Local Weather” app</a> from FreeCodeCamp’s Intermediate Front End Development Projects. I could not get it to work and I drifted away from FCC and web development. But then near the end of the year I read about a web dev guide from P1xt and this got me back on my way to becoming a web developer.</p>
+<h2>Back on track</h2>
+<p>In the first half of 2017 I have only been following the guide <a href="https://github.com/P1xt/p1xt-guides/blob/master/wd-cs.md">“Web Development with Computer Science Foundations - comprehensive”</a>. And so it happened that while reading Kyle Simpson’s <a href="https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&amp;%20performance/README.md#you-dont-know-js-async--performance">“You Don’t Know JS: Async &amp; Performance”</a> I had a flashback. I finally knew how to finish this “Show the Local Weather” app!</p>
+<h2>Building the app</h2>
+<p>To complete the project the following user stories need to be implemented:</p>
+<ol>
+<li>I can see the weather in my current location.</li>
+<li>I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.</li>
+<li>I can push a button to toggle between Fahrenheit and Celsius.</li>
+</ol>
+<h3>Location</h3>
+<p>To get the location of the user I looked at several API’s which supply the location details when given an IP address. I opted for <a href="http://freegeoip.net">freegeoip.net</a>. This API gave me the most accurate location for the IP addresses I could test with.</p>
+<p>The location details are retrieved with fetch.</p>
+<pre><code><span class="hljs-keyword">var</span> result = fetch(<span class="hljs-string">'//freegeoip.net/json/'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(response)</span> </span>{
+        <span class="hljs-keyword">return</span> response.json();
+    })
+    .then(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(data)</span> </span>{
+        <span class="hljs-keyword">var</span> lat = data.latitude;
+        <span class="hljs-keyword">var</span> lon = data.longitude;
+</code></pre>
+<p>Fetch returns a Promise from which the response is then returned as JSON data. From this data the latitude and longitude info is assigned to variables to be used to get the weather info.</p>
+<h3>Weather</h3>
+<p>To get the weather info I then use the location details of the user I got from the <a href="http://freegeoip.net">freegeoip.net</a> API. For this I opted to use <a href="http://openweathermap.org/api">openweathermap.org</a> because this API also supplied a weather icon. So I could use that straightaway to fullfill the user story.</p>
+<p>The weather details are also retrieved with fetch. This is “chained” to the first fetch.</p>
+<pre><code><span class="hljs-keyword">var</span> result = fetch(<span class="hljs-string">'//freegeoip.net/json/'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">response</span>) </span>{
+        <span class="hljs-keyword">return</span> response.json();
+    })
+    .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
+        <span class="hljs-keyword">var</span> lat = data.latitude;
+        <span class="hljs-keyword">var</span> lon = data.longitude;
+        <span class="hljs-keyword">var</span> <span class="hljs-built_in">url</span> = baseUrlWeather + <span class="hljs-string">"lat="</span> + lat + <span class="hljs-string">"&amp;lon="</span> + lon + apiKey + units;
+        <span class="hljs-keyword">return</span> fetch(<span class="hljs-built_in">url</span>);
+    })
+    .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">response</span>) </span>{
+      <span class="hljs-keyword">return</span> response.json();
+    })
+    .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+          <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'There has been a problem with your fetch operation: '</span> + error.message);
+})
+</code></pre>
+<p>The returned Promise again holds a response with the JSON data containing the weather details.</p>
+<h3>Temperature</h3>
+<p>To be able to show the temperature in Celsius or Fahrenheit I first wrote 2 helper functions which convert to the required temperature unit.</p>
+<pre><code><span class="hljs-keyword">function</span> <span class="hljs-title">cToF</span>(degrees) {
+  <span class="hljs-keyword">return</span> <span class="hljs-type">(degrees</span> * <span class="hljs-number">1.8</span> + <span class="hljs-number">32</span>).toFixed(<span class="hljs-number">0</span>);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title">fToC</span>(degrees) {
+  <span class="hljs-keyword">return</span> <span class="hljs-type">((degrees</span> - <span class="hljs-number">32</span>) * .<span class="hljs-number">5556</span>).toFixed(<span class="hljs-number">0</span>);
+}
+</code></pre>
+<p>I later realized it would be better to store the converted values instead of re-calculating them each time.</p>
+<p>I then wrote another helper function to get the current temperature value and unit. This function then calls the appropriate conversion function and sets the new temperature value and unit.</p>
+<pre><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">changeTempUnit</span></span>(id){
+  <span class="hljs-comment">//Get contents off element clicked</span>
+  content = document.getElementById(id).innerText;
+  <span class="hljs-keyword">var</span> degrees = content.slice(<span class="hljs-number">0</span>,<span class="hljs-number">-3</span>);
+  <span class="hljs-keyword">var</span> isC = content.slice(<span class="hljs-number">-1</span>);
+  <span class="hljs-keyword">var</span> <span class="hljs-keyword">new</span><span class="hljs-type">Content</span>;
+  <span class="hljs-keyword">if</span> (isC === <span class="hljs-string">"C"</span>) {
+    degrees = cToF(degrees);
+    <span class="hljs-keyword">new</span><span class="hljs-type">Content</span> = degrees + <span class="hljs-string">" "</span> + symbolFahrenheit;
+  } <span class="hljs-keyword">else</span> {
+    degrees = fToC(degrees);
+    <span class="hljs-keyword">new</span><span class="hljs-type">Content</span> = degrees + <span class="hljs-string">" "</span> + symbolCelsius;
+  }
+  <span class="hljs-comment">//Set new content of element clicked</span>
+  document.getElementById(id).innerHTML = <span class="hljs-keyword">new</span><span class="hljs-type">Content</span>;
+}
+</code></pre>
+<p>And this function was invoked when the user clicks the button showing the temperature.</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Temperature<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"txtTemperature"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"changeTempUnit(this.id);"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"temperature"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+<h3>Wind</h3>
+<p>As an added bonus I also wrote a function which converts the wind direction in degrees to cardinal.</p>
+<pre><code><span class="hljs-keyword">var</span> windDirections = [<span class="hljs-string">"N"</span>,<span class="hljs-string">"NNE"</span>,<span class="hljs-string">"NE"</span>,<span class="hljs-string">"ENE"</span>,<span class="hljs-string">"E"</span>,<span class="hljs-string">"ESE"</span>,<span class="hljs-string">"SE"</span>,<span class="hljs-string">"SSE"</span>,<span class="hljs-string">"S"</span>,<span class="hljs-string">"SSW"</span>,<span class="hljs-string">"SW"</span>,<span class="hljs-string">"WSW"</span>,<span class="hljs-string">"W"</span>,<span class="hljs-string">"WNW"</span>,<span class="hljs-string">"NW"</span>,<span class="hljs-string">"NNW"</span>,<span class="hljs-string">"N"</span>];
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getWindDirection</span>(<span class="hljs-params">degrees</span>) </span>{
+  <span class="hljs-keyword">var</span> index = <span class="hljs-built_in">Math</span>.round((degrees % <span class="hljs-number">360</span>) / <span class="hljs-number">22.5</span>);
+  <span class="hljs-keyword">return</span> windDirections[index];
+}
+</code></pre>
+<h3>Styling</h3>
+<p>To quickly get going with the design of the site I used <a href="http://getskeleton.com/">Skeleton CSS</a>. This framework features a grid and some basic styling which make your site look better from the start.</p>
+<h2>Finally</h2>
+<p>The live site can be found <a href="http://ill-fated-circle.surge.sh/">here</a>. And the source code can be found <a href="https://github.com/groninge01/local-weather-app">here</a>.</p>
+<p>To do:</p>
+<ul>
+<li>make the site work on Apple IOS,</li>
+<li>create the same app in Angular (Material &amp; Flex Layout).</li>
+</ul>
+</div><footer data-reactid="24"><noscript data-reactid="25"></noscript></footer></article></main></div><footer class="footer flexItem-none py-3 bgDarker-1" data-reactid="26"><div class="maxW-4 mx-auto px-2 px-4@sm flex@sm flex-wrap" data-reactid="27"><nav id="nav" class="mr-auto@sm" role="navigation" data-reactid="28"><ul class="listReset lineHeight-44 mb-0 flex@sm flex-wrap items-center" data-reactid="29"><li class="inlineBlock mr-2" data-reactid="30"><a href="/" data-reactid="31">Home</a></li><li class="inlineBlock mr-2" data-reactid="32"><a href="/work/" data-reactid="33">Work</a></li><li class="inlineBlock mr-2" data-reactid="34"><a href="/writing/" data-reactid="35">Writing</a></li><li class="inlineBlock mr-2" data-reactid="36"><a href="/resume/" data-reactid="37">Resume</a></li><li class="inlineBlock" data-reactid="38"><a href="/colophon/" data-reactid="39">Colophon</a></li></ul></nav><ul class="listReset lineHeight-44 mb-0 flex@sm flex-wrap items-center" data-reactid="40"><li class="inlineBlock mr-2" data-reactid="41"><a href="mailto:groninge@hotmail.com" data-reactid="42">Email</a></li><li class="inlineBlock mr-2" data-reactid="43"><a href="https://linkedin.com/in/stefanvangroningen" target="_blank" data-reactid="44">Linkedin</a></li><li class="inlineBlock" data-reactid="45"><a href="https://github.com/groninge01" target="_blank" data-reactid="46">GitHub</a></li></ul></div></footer></div></div><script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-88166052-1', 'auto');
+ga('send', 'pageview');
+</script><script async="" src="https://www.google-analytics.com/analytics.js"></script></body></html>
