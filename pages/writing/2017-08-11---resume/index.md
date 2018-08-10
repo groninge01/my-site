@@ -54,7 +54,33 @@ Designed and built the following projects:
 1. Book: Setting Up ES6
 1. Book: JavaScript Allongé, the "Six" Edition
 1. Course: Getting Sassy with CSS
-1. **Project: Build an online Towers of Hanoi solver that accepts a tower height between 5 and 10, and then displays a graphical (animated) solution, iteratively moving each piece until the puzzle is solved***
+1. Project: Build an online Towers of Hanoi solver that accepts a tower height between 5 and 10, and then displays a graphical (animated) solution, iteratively moving each piece until the puzzle is solved
 1. Project: Pick a template from here and create a new template with it as your inspiration (do not use it's assets)
 
-***Currently on this book/course/project**
+*Tier 2 - strengthen your foundation*
+
+1. **Course: How to Code: Simple Data***
+1. Course: How to Code: Complex Data
+1. Course: Software Construction: Data Abstraction
+1. Course: Software Construction: Object-Oriented Design
+1. Course: Software Engineering: Introduction
+1. Course: Software Development Capstone Project
+1. Book: DOM Enlightenment
+1. Project: Simon Game from the frontend section of FCC
+1. Project: Read up on Gulp - try to incorporate it into your workflow if you aren't using it regularly already
+1. Project: Read up on Mocha - try to use it to test your JavaScript, every chance you get
+1. Course: Programming for the Web with JavaScript on edX or M101JS: MongoDB for Node.js Developers on MongoDB University (or both, your choice)
+1. Project: The FCC Backend Certification - all projects, ignore the tutorials and just read the official docs if you want.
+1. Course: Single Variable Calculus
+1. Book: JavaScript Design Patterns
+1. Project: Clone this landing page
+1. Course: Mathematics for Computer Science
+1. Project: Build the Pomodoro project from the FCC frontend curriculum
+1. Article: Read Algorithms and Flowcharts and then familiarize yourself with Pencil ... start flowcharting complex portions of your code logic as part of your documentation
+1. Project: Clone the front page of this website modifying it to highlight a different product or industry. Make special note of the secondary navigation bar at the top. Implementing that is the highlight of this project.
+1. Project: Complete all Classic Puzzles - Easy on CodinGame in JavaScript
+1. Book: Open Data Structures
+1. Project: Complete all challenges from the Code Jam Qualification Round 2015
+1. Project: Pick a template from here and create a new template with it as your inspiration (do not use its assets)
+
+***Currently on this article/book/course/project**
